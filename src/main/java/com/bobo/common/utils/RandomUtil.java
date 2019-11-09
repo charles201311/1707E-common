@@ -44,11 +44,33 @@ public class RandomUtil {
 	//方法3：返回1个1-9,a-Z之间的随机字符。 (8分)
 	public static char randomCharacter (){
 		//声明1-9,a-Z之间的符所有字符
-		String str ="12456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
+		String str ="123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM";
 		return str.charAt(random(0, str.length()-1));
 		
 		
 	}
+	/**
+	 * 
+	 * @Title: randomNumber 
+	 * @Description: 返回指定长度数字
+	 * @param length
+	 * @return
+	 * @return: String
+	 */
+	public static String randomNumber (int length){
+		//声明1-9,a-Z之间的符所有字符
+		String str ="1234567890";
+		String num="";
+		for (int i = 0; i < length; i++) {
+			num+=str.charAt(random(0, str.length()-1));
+		}
+		return num;
+		
+		
+	}
+	
+	
+	
 	//方法4：返回参数length个字符串(5分)，方法内部要调用randomCharacter()方法 (4分)
 	public static String randomString(int length){
 		String str="";

@@ -5,8 +5,8 @@
 	<groupId>com.bobo</groupId>
 	<artifactId>bobo-common</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	
+
+
 
 
 	<build>
@@ -22,6 +22,16 @@
 					<target>1.8</target>
 					<!-- 编码方法 -->
 					<encoding>utf-8</encoding>
+				</configuration>
+			</plugin>
+
+			<!--打包时 跳过单元测试 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
+				<configuration>
+					<skip>true</skip>
 				</configuration>
 			</plugin>
 
