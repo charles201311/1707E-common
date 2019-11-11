@@ -5,6 +5,14 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 public class StringUtilTest {
+	
+	
+	@Test
+	public void testIsNumber() {
+		String num ="-01288";
+		boolean b = StringUtil.isNumber(num);
+		System.out.println(b);
+	}
 
 	@Test
 	public void testHasLength() {
