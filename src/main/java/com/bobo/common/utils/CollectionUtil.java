@@ -6,6 +6,7 @@ public class CollectionUtil {
 	
 	public static boolean isEmpty(Collection<?> src) {
 		
+		
 		if(null==src || src.size()==0) {
 		    return true;
 		}
